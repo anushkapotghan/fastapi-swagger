@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+pandas
+numpy
+openpyxl
+gunicorn
+logging
+asyncio
+datetime
+
