@@ -1,3 +1,6 @@
+@app.get("/")
+def read_root():
+  return{"message": "FastAPI is live!"}
 # # To run:
 # # python -m uvicorn main:app --reload
 
