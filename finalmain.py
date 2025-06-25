@@ -15,16 +15,12 @@ year = str(today.year)
 month = str(today.month)
 day = str(today.day)
 
-# 2. STEP: Get the root directory of your project (where this .py file lives)
+import os
+
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+MACHINES_BASE_PATH = PROJECT_ROOT  # if script and Excel are in the same folder
+all_machines_path = os.path.join(MACHINES_BASE_PATH, "MachinePulse_All_Machines.xlsx")
 
-# 3. STEP: Define the path to your data folder (put all Excel files here)
-#    - Make sure you have a folder named "MachinePulseData" in your project directory
-MACHINES_BASE_PATH = os.path.join(PROJECT_ROOT, "machine")
-
-# 4. STEP: Define the path to your master Excel file
-#    - Place your "MachinePulse_All_Machines.xlsx" inside "MachinePulseData"
-all_machines_path = os.path.join(MACHINES_BASE_PATH, "MachinePulse_All_Machines")
 
 # 5. STEP: Define the path for warnings Excel file
 #    - Use "/tmp" for writing files on Render (it's always writable)
