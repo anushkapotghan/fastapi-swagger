@@ -17,8 +17,7 @@ month = str(today.month)
 day = str(today.day)
 
 # Define paths here 
-#MACHINES_BASE_PATH = r".\MachinePulseData"
-MACHINES_BASE_PATH = r"C:\machine\MachinePulse_All_Machines.xlsx"
+MACHINES_BASE_PATH = "MachinePulseData"
 warning_excel_path = os.path.join(MACHINES_BASE_PATH, f"warnings_{year}_{month}_{day}.xlsx")
 
 # # Define the columns for warning excel file
