@@ -13,7 +13,7 @@ router = APIRouter()
 warnings_cache = []
 
 # Fixed path to the Excel file
-warning_excel_path = "warnings_2025_6_26.xlsx"
+warning_excel_path = "warnings_2025_6_19.xlsx"
 
 @router.get("/machines")
 def list_machines():
